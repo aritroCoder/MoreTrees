@@ -1,7 +1,7 @@
 const User = require('./models/User');
+const connectToMongo = require('./middleware/db');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const connectToMongo = require('./middleware/db');
 
 const SECRET_KEY = process.env.SECRET_KEY || 'secret' ;
 
