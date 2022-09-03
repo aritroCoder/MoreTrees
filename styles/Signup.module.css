@@ -1,0 +1,16 @@
+.inpForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.field{
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.error{
+    font-size: 12px;
+    color: red;
+    margin: 0;
+}

@@ -1,0 +1,23 @@
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: #90B77D;
+    padding: 0px 12px;
+    color: #483838;
+}
+.brand{
+    font-size: 25px;
+    font-weight: 900;
+    padding: 7px 0px
+}
+.norm{
+    padding: 10px 28px;
+}
+.norm:hover{
+    background:#42855B;
+    color: #fff;
+}
