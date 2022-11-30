@@ -40,7 +40,7 @@ export default async function handler(req, res) {
         }
 
         await user.save();
-        res.json({ 'message': 'Plant added to user' })
+        res.send(user);
     } else {
         res.status(400).send({ error: 'User not found' });
     }

@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar/Navbar';
 import styles from '../styles/Signup.module.css';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
-const signup = () => {
+const login = () => {
     const router = useRouter();
     const formik = useFormik({
         initialValues: {
@@ -30,6 +30,8 @@ const signup = () => {
             let data = await response.json();
             if(response.status === 200){
                 localStorage.setItem('user', JSON.stringify(data.user));
+                alert("Login Successful");
+                window.location.href = '/';
             }else{
                 alert(data.error);
             }
@@ -56,4 +58,4 @@ const signup = () => {
     )
 }
 
-export default signup
+export default login

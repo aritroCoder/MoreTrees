@@ -35,6 +35,8 @@ const signup = () => {
             let data = await response.json()
             if(response.status === 200){
                 localStorage.setItem('user', JSON.stringify(data.user));
+                alert("Signup Successful");
+                window.location.href = '/';
             }else{
                 alert(data.error);
             }
