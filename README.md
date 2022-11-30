@@ -6,7 +6,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, create a `.env.local` file in the root directory, and add two lines here:
+First, afteer generating the `node_modules` create a `.env.local` file in the root directory, and add two lines here:
 ```
 SECRET_KEY = "YOUR_SECRET_KEY"
 NEXT_PUBLIC_MONGODB = "YOUR_MONGODB_URL"
