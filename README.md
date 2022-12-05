@@ -6,7 +6,17 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, afteer generating the `node_modules` create a `.env.local` file in the root directory, and add two lines here:
+Clone the repo
+```
+git clone https://github.com/aritroCoder/MoreTrees
+cd MoreTrees
+```
+Generate the node modules folder
+```
+npm install
+```
+
+Then, after generating the `node_modules` create a `.env.local` file in the root directory, and add two lines here:
 ```
 SECRET_KEY = "YOUR_SECRET_KEY"
 NEXT_PUBLIC_MONGODB = "YOUR_MONGODB_URL"
