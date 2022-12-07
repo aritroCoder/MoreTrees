@@ -20,6 +20,8 @@ Then, after generating the `node_modules` create a `.env.local` file in the root
 ```
 SECRET_KEY = "YOUR_SECRET_KEY"
 NEXT_PUBLIC_MONGODB = "YOUR_MONGODB_URL"
+
+Note: If you are unable to set up mongodb URL, then you can use this testing URL: `mongodb+srv://testuser:cgfBXbObcJwcikDg@testcluster.llctihc.mongodb.net/moretrees`. But keep in mind you wont be able to view the database in that case to debugging can be difficult
 ```
 where secret key is any string you can use and mongodb url is a valid local or cloud mongodb URI.<br/>
 Then, run the development server:
