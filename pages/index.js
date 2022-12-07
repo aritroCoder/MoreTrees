@@ -6,11 +6,14 @@ import styles from '../styles/Home.module.css'
 import Navbar from '../components/Navbar/Navbar';
 
 export default function Home() {
+  let [count, setCount] = useState(0);
   const [username, setUsername] = useState('Please Log in.');
   const [loggedIn, setLoggedIn] = useState(false);
   useEffect(() => {
     if (localStorage.getItem('user')) {
+      console.log(JSON.parse(localStorage.getItem('user')));
       setUsername(JSON.parse(localStorage.getItem('user')).username);
+      setCount(JSON.parse(localStorage.getItem('user')).plantCount);
       setLoggedIn(true);
     }
   }, []);
@@ -41,7 +44,14 @@ export default function Home() {
       <span className={styles.herotext}>Plant more trees.</span>
       <div className={styles.main}>
         <h1>Welcome, {username}</h1>
-        {loggedIn && <p>You have planted {JSON.parse(localStorage.getItem('user')).plantCount} trees so far{JSON.parse(localStorage.getItem('user')).plantCount>1?' 🥳':', plant some more!'}</p>}
+        {loggedIn && <p>You have planted {count} trees so far
+          {count === 0 && <span>. Go plant a tree! 😇 </span>}
+          {count>0 && count<=5 && <span>. You can do better! 🤗 </span>}
+          {count>5 && count<=10 && <span>. You are doing great! 😊 </span>}
+          {count>10 && count<=20 && <span>. You are a tree lover! 😎 </span>}
+          {count>20 && count<=50 && <span>. We salute your efforts! 🫡 </span>}
+          {count>50 && <span>. You are a tree hero! 🥳 </span>}
+        </p>}
         {loggedIn && <div className={styles.centered}><button className={styles.plantNow} onClick={plantNowHandler}>Plant a tree!</button></div>}
         {loggedIn && <div className={styles.logout}><button className={styles.logout} onClick={logOutHandler}>Log Out</button></div>}
       </div>
