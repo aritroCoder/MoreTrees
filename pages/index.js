@@ -17,6 +17,11 @@ export default function Home() {
       setLoggedIn(true);
     }
   }, []);
+  const profileHandler = (event) =>{
+    event.preventDefault();
+    if(loggedIn) window.location.href = '/profile';
+    else window.location.href = '/login';
+  }
   const plantNowHandler = (event) =>{
     event.preventDefault();
     if(loggedIn) window.location.href = '/plantTree';
@@ -43,7 +48,7 @@ export default function Home() {
       </div>
       <span className={styles.herotext}>Plant more trees.</span>
       <div className={styles.main}>
-        <h1>Welcome, {username}</h1>
+        <h1>Welcome,  <span className={styles.link} onClick={profileHandler}>{username}</span></h1>
         {loggedIn && <p>You have planted {count} trees so far
           {count === 0 && <span>. Go plant a tree! 😇 </span>}
           {count>0 && count<=5 && <span>. You can do better! 🤗 </span>}
