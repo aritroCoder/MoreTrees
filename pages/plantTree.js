@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAppleWhole } from '@fortawesome/free-solid-svg-icons'
 const about = () => {
-    const plantList = ['Apple', 'Banana', 'Cactus', 'Eucalyptus','Mango','Pomegranate','Pear','Lemon'];
+    const plantList = ['Apple', 'Banana', 'Eucalyptus','Cactus','Mango','Pomegranate','Pear','Lemon'];
     async function plantHandler(i) {
         let response = await fetch('http://localhost:3000/api/plant', {
             method: 'POST',
@@ -35,12 +35,12 @@ const about = () => {
             <Image src="/banana-icon.svg" width={17} height={17} className={`${styles.icon} ${styles.iconbanana}`}/>Banana
             </button>
             <button onClick={() => plantHandler(2)} className={`${styles.plantButton} ${styles.green}`}>
+            <Image src="/icons8-eucalyptus-64.png" width={17} height={17} className={`${styles.icon}`}/>
+                Eucalyptus</button>
+                <button onClick={() => plantHandler(3)} className={`${styles.plantButton} ${styles.green}`}>
             <Image src="/cactus-plant-icon.svg" width={17} height={17} className={`${styles.icon}`}/>
                 Cactus
                 </button>
-            <button onClick={() => plantHandler(3)} className={`${styles.plantButton} ${styles.green}`}>
-            <Image src="/icons8-eucalyptus-64.png" width={17} height={17} className={`${styles.icon}`}/>
-                Eucalyptus</button>
             <button onClick={() => plantHandler(4)} className={`${styles.plantButton} ${styles.yellow}`}>
             <Image src="/mango-fruit-icon.svg" width={17} height={17} className={`${styles.icon}`}/>Mango</button>
             <button onClick={() => plantHandler(5)} className={`${styles.plantButton} ${styles.red}`}>

@@ -1,0 +1,34 @@
+.plantdiv {
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 12px;
+    cursor: pointer;
+}
+.plantdiv:hover {
+    transform: scale(1.1);
+}
+.green:hover{
+    background-color: #3e8e41;
+}
+.red{
+    background-color: #f44336;
+}
+.red:hover{
+    background-color: #cc4233;
+}
+.green{
+    background-color: #4CAF50;
+}
+.yellow{
+    background-color: #f7da33;
+}
+.yellow:hover{
+    background-color: #d9c22b;
+}
+.iconapple{
+    color: #fcf7c0;
+}

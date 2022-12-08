@@ -17,6 +17,11 @@ export default function Home() {
       setLoggedIn(true);
     }
   }, []);
+  const profileHandler = (event) =>{
+    event.preventDefault();
+    if(loggedIn) window.location.href = '/profile';
+    else window.location.href = '/login';
+  }
   const plantNowHandler = (event) =>{
     event.preventDefault();
     if(loggedIn) window.location.href = '/plantTree';
