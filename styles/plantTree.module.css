@@ -1,5 +1,4 @@
-.plantButton{
-    background-color: #4CAF50;
+.plantButton {
     border: none;
     color: white;
     padding: 15px 32px;
@@ -10,6 +9,28 @@
     margin: 4px 12px;
     cursor: pointer;
 }
-.plantButton:hover{
+.green:hover{
     background-color: #3e8e41;
+}
+.red{
+    background-color: #f44336;
+}
+.red:hover{
+    background-color: #cc4233;
+}
+.green{
+    background-color: #4CAF50;
+}
+.yellow{
+    background-color: #f7da33;
+}
+.yellow:hover{
+    background-color: #d9c22b;
+}
+.icon {
+    margin: 0 5px 0 0px;
+    height: 15px;
+}
+.iconapple{
+    color: #fcf7c0;
 }

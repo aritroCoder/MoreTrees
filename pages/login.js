@@ -31,6 +31,7 @@ const login = () => {
             if(response.status === 200){
                 localStorage.setItem('user', JSON.stringify(data.user));
                 alert("Login Successful");
+                console.log(data.user);
                 window.location.href = '/';
             }else{
                 alert(data.error);

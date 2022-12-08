@@ -9,6 +9,7 @@ async function connectToMongo() {
             console.log("Connected succcessfully");
         }
     } catch (errors) {
+        console.log("Error connecting to database");
         return Promise.reject(errors);
     }
 }
