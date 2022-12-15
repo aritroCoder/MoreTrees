@@ -20,3 +20,112 @@
 .link:hover {
     cursor: pointer;
 }
+
+.you,.grt,.lover,.effort{
+    left:10vw;
+    position: absolute;
+    width: 20vw;
+    font-size: 1.2vw;
+}
+
+
+.card{
+    position: relative;
+    height: 37vw;
+    width: 30vw;
+    left: 33vw;
+    box-shadow: 2px 2px 2px 2px grey;
+    border-radius: 1.5rem;
+    background:linear-gradient(#ffffff,#bec193);
+    margin-top: 7rem;
+
+}
+
+.heading{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 2.2vw;
+    left:28%;
+    position: absolute;
+    top:1.8rem;
+}
+
+.plant 
+{
+    position: absolute;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    top:32%;
+    left:6vw;
+    font-size: 1.3rem;
+
+}
+
+.image{
+    height: 3.2vw;
+    border-radius: 5vw;
+    box-shadow: 1px 1px 1px 1px grey;
+    top:1.8vw;
+    left:1.9vw;
+    position:absolute;
+    
+}
+
+.heading_2{
+    position: absolute;
+    top: 9vw;
+    left:2vw;
+    font-weight: 900;
+    font-size: 1.6vw;
+    
+    /* background: linear-gradient( to right, #464a48,
+    #f6faf9, #0f0000); */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.heading_3{
+    font-size: 1.6vw;
+    position: absolute;
+    top: 9vw;
+    left:19vw;
+    font-weight: 900;
+    /* background: linear-gradient(to right, #464a48,
+    #f6faf9, #0f0000); */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.plantNow{
+    position: absolute;
+    top:50%;
+    left:32%;
+    border-radius: 2vw;
+    height: 4vw;
+    width: 12vw;
+    box-shadow: 1px 1px 1px 1px grey;
+    color:white;
+
+    background-color: rgb(52, 92, 135);
+
+
+
+}
+
+.logout{
+    position: absolute;
+    top:75%;
+    left:32%;
+    border-radius: 2vw;
+    height: 4vw;
+    width: 12vw;
+    background-color: rgb(52, 92, 135);
+    box-shadow: 1px 1px 1px 1px grey;
+    color: white;
+}  
+
+.plantNow:hover{
+    background-color: aqua;
+    color: black;
+}
+
+.logout:hover{
+    background-color: red;
+}
