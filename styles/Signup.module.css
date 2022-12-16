@@ -14,3 +14,57 @@
     color: red;
     margin: 0;
 }
+
+.holder{
+    box-shadow: 2px 2px 2px 2px grey;
+    width: 35vw;
+    border-radius: 1.5vw;
+    position: absolute;
+    left: 55%;
+    top:30%;
+    height: 29vw;
+    background: linear-gradient(to top, #90B77D,white);
+
+}
+
+.inpForm{
+    position: absolute;
+    top:2vw;
+    left:13vw;
+}
+
+.btn{
+    position: absolute;
+    height: 3vw;
+    width: 10vw;
+    border-radius: 2vw;
+    background-color: rgb(17, 84, 122);
+    color: white;
+    top:22vw;
+
+}
+
+.field{
+    margin-bottom: 0.5vw;
+
+}
+
+.field_last{
+    margin-top: 1.5vw;
+    padding: 5px;
+    border-radius: 0.5vw;
+}
+
+.btn:hover{
+    background-color: aqua;
+    color: black;
+}
+
+.img{
+    height: 29vw;
+    width:35vw;
+    position: absolute;
+    top:18vw;
+    left:10vw;
+
+}

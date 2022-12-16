@@ -33,11 +33,11 @@ const signup = () => {
                 body: JSON.stringify(body)
             })
             let data = await response.json()
-            if(response.status === 200){
+            if (response.status === 200) {
                 localStorage.setItem('user', JSON.stringify(data.user));
                 alert("Signup Successful");
                 window.location.href = '/';
-            }else{
+            } else {
                 alert(data.error);
             }
         }
@@ -45,30 +45,36 @@ const signup = () => {
     return (
         <>
             <Navbar />
-            <form className={styles.inpForm} onSubmit={formik.handleSubmit}>
+            <div className={styles.holder}>
+                <form className={styles.inpForm} onSubmit={formik.handleSubmit}>
 
-                <div>
-                    <input className={styles.field} type="text" name="username" placeholder="Username" value={formik.values.username} onChange={formik.handleChange} onBlur={formik.handleBlur}></input>
-                    {formik.touched.username && formik.errors.username ? <p className={styles.error}>{formik.errors.username}</p> : null}
-                </div>
+                    <div>
+                        <input className={styles.field} type="text" name="username" placeholder="Username" value={formik.values.username} onChange={formik.handleChange} onBlur={formik.handleBlur}></input>
+                        {formik.touched.username && formik.errors.username ? <p className={styles.error}>{formik.errors.username}</p> : null}
+                    </div>
 
-                <div>
-                    <input className={styles.field} type="text" name="email" placeholder="Email" value={formik.values.email} onChange={formik.handleChange} onBlur={formik.handleBlur}></input>
-                    {formik.touched.email && formik.errors.email ? <p className={styles.error}>{formik.errors.email}</p> : null}
-                </div>
+                    <div>
+                        <input className={styles.field} type="text" name="email" placeholder="Email" value={formik.values.email} onChange={formik.handleChange} onBlur={formik.handleBlur}></input>
+                        {formik.touched.email && formik.errors.email ? <p className={styles.error}>{formik.errors.email}</p> : null}
+                    </div>
 
-                <div>
-                    <input className={styles.field} type="password" name="password" placeholder="Password" value={formik.values.password} onChange={formik.handleChange} onBlur={formik.handleBlur}></input>
-                    {formik.touched.password && formik.errors.password ? <p className={styles.error}>{formik.errors.password}</p> : null}
-                </div>
+                    <div>
+                        <input className={styles.field} type="password" name="password" placeholder="Password" value={formik.values.password} onChange={formik.handleChange} onBlur={formik.handleBlur}></input>
+                        {formik.touched.password && formik.errors.password ? <p className={styles.error}>{formik.errors.password}</p> : null}
+                    </div>
 
-                <div>
-                    <input className={styles.field} type="password" name="confirmPassword" placeholder="Confirm Password" value={formik.values.confirmPassword} onChange={formik.handleChange} onBlur={formik.handleBlur}></input>
-                    {formik.touched.confirmPassword && formik.errors.confirmPassword ? <p className={styles.error}>{formik.errors.confirmPassword}</p> : null}
-                </div>
+                    <div>
+                        <input className={styles.field_last} type="password" name="confirmPassword" placeholder="Confirm Password" value={formik.values.confirmPassword} onChange={formik.handleChange} onBlur={formik.handleBlur}></input>
+                        {formik.touched.confirmPassword && formik.errors.confirmPassword ? <p className={styles.error}>{formik.errors.confirmPassword}</p> : null}
+                    </div>
+                    <button className={styles.btn} type="submit">Submit</button>
+                </form>
 
-                <button className={styles.field} type="submit">Submit</button>
-            </form>
+            </div>
+
+            <img src="https://us.123rf.com/450wm/sarayutsy/sarayutsy1810/sarayutsy181000043/sarayutsy181000043.jpg?ver=6" alt="" className={styles.img}/>
+
+
         </>
     )
 }
