@@ -64,14 +64,14 @@ export default function Home() {
 
           {loggedIn && <p className={styles.plant}> {count}
             {count === 0 && <span className={Go}>. Go plant a tree! 😇 </span>}
-            {count > 0 && count <= 5 && <span className={styles.you} >. You can do better!🤗 </span>}
-            {count > 5 && count <= 10 && <span className={styles.grt}>. You are doing great! 😊 </span>}
-            {count > 10 && count <= 20 && <span className={styles.lover}>. You are a tree lover! 😎 </span>}
-            {count > 20 && count <= 50 && <span className={styles.effort}>. We salute your efforts! 🫡 </span>}
-            {count > 50 && <span className={styles.last}>. You are a tree hero! 🥳 </span>}
+            {count > 0 && count <= 5 && <span className={styles.you} > You can do better!🤗 </span>}
+            {count > 5 && count <= 10 && <span className={styles.grt}>You are doing great! 😊 </span>}
+            {count > 10 && count <= 20 && <span className={styles.lover}>You are a tree lover! 😎 </span>}
+            {count > 20 && count <= 50 && <span className={styles.effort}>We salute your efforts! 🫡 </span>}
+            {count > 50 && <span className={styles.last}>You are a tree hero! 🥳 </span>}
           </p>}
-          {loggedIn && <div className={styles.centered}><button className={styles.plantNow} onClick={plantNowHandler}>Plant a tree!</button></div>}
-          {loggedIn && <div className={styles.out}><button className={styles.logout} onClick={logOutHandler}>Log Out</button></div>}
+          {loggedIn && <div className={styles.centered}><button className={styles.plantNow} onClick={plantNowHandler}> <span className={styles.last_1}>Plant a tree!</span> </button></div>}
+          {loggedIn && <div className={styles.out}><button className={styles.logout} onClick={logOutHandler}> <span className={styles.last_2}>Log Out</span> </button></div>}
         </div>
 
       </div>
