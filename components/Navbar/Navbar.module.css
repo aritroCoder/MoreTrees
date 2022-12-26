@@ -1,6 +1,6 @@
 .container{
     width: 100%;
-    height: 100%;
+    height: 5vw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -8,14 +8,17 @@
     background: #90B77D;
     padding: 0px 12px;
     color: #483838;
+    /* position: absolute; */
+    
 }
 .brand{
-    font-size: 25px;
+    font-size: 1.7vw;
     font-weight: 900;
     padding: 7px 0px
 }
 .norm{
     padding: 10px 28px;
+    font-size: 1.7vw;
 }
 .norm:hover{
     background:#42855B;

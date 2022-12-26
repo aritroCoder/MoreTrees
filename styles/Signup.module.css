@@ -5,12 +5,17 @@
     align-items: center;
 }
 .field{
-    margin-top: 20px;
-    padding: 5px;
-    border-radius: 5px;
+    
+    border-radius: 0.4vw;
+    position: absolute;
+    height: 2.4vw;
+    width: 11vw;
+    top:10vw;
+    left:0%;
+    font-size: 1vw;
 }
-.error{
-    font-size: 12px;
+.error1{
+    font-size: 1vw;
     color: red;
     margin: 0;
 }
@@ -19,9 +24,10 @@
     box-shadow: 2px 2px 2px 2px grey;
     width: 35vw;
     border-radius: 1.5vw;
+    display: grid;
     position: absolute;
-    left: 55%;
-    top:30%;
+    top: 25vw;
+    left: 21vw;
     height: 29vw;
     background: linear-gradient(to top, #90B77D,white);
 
@@ -40,19 +46,21 @@
     border-radius: 2vw;
     background-color: rgb(17, 84, 122);
     color: white;
-    top:22vw;
-
+    top:21vw;
+     left:0vw;
 }
 
-.field{
-    margin-bottom: 0.5vw;
 
-}
 
 .field_last{
-    margin-top: 1.5vw;
-    padding: 5px;
-    border-radius: 0.5vw;
+    
+    position: absolute;
+    height: 2.4vw;
+    width: 11vw;
+    border-radius: 0.4vw;
+    left:0%;
+    top:15vw;
+    font-size: 1vw;
 }
 
 .btn:hover{
@@ -61,10 +69,72 @@
 }
 
 .img{
-    height: 29vw;
-    width:35vw;
+    max-height: 29vw;
+    max-width:25vw;
     position: absolute;
-    top:18vw;
-    left:10vw;
+    left: 26vw;
+    top:2vw;
+    position: relative;
 
+}
+.username{
+    position: absolute;
+    height: 2.4vw;
+    width: 11vw;
+    border-radius: 0.4vw;
+    left:0%;
+    top:1vw;
+    font-size: 1vw;
+
+}
+
+.email{
+    position: absolute;
+    font-size: 1vw;
+    height: 2.4vw;
+    width: 11vw;
+    border-radius: 0.4vw;
+    left:0%;
+    top:5.5vw;
+}
+
+.error1{
+    position: absolute;
+    left:4vw;
+    top:3.5vw;
+}
+
+.error2{
+    position: absolute;
+    left:4vw;
+    top:8.5vw;
+    font-size: 1vw;
+    color: red;
+    margin: 0;
+}
+
+.error3{
+    position: absolute;
+    left:4vw;
+    top:12.5vw;
+    font-size: 1vw;
+    color: red;
+    margin: 0;
+}
+
+.error4{
+    position: absolute;
+    left:4vw;
+    top:18.5vw;
+    font-size: 1vw;
+    color: red;
+    margin: 0;
+}
+
+
+.submit{
+    font-size: 1.2vw;
+    position: absolute;
+    top:0.6vw;
+    left:2.8vw
 }
