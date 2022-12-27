@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar/Navbar';
 import styles from '../styles/Signup.module.css';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
+import Head from 'next/head';
 const signup = () => {
     const formik = useFormik({
         initialValues: {
@@ -33,42 +34,54 @@ const signup = () => {
                 body: JSON.stringify(body)
             })
             let data = await response.json()
-            if(response.status === 200){
+            if (response.status === 200) {
                 localStorage.setItem('user', JSON.stringify(data.user));
                 alert("Signup Successful");
                 window.location.href = '/';
-            }else{
+            } else {
                 alert(data.error);
             }
         }
     });
     return (
         <>
+           <Head>
+           <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.5"/>
+
+          </Head>
+
             <Navbar />
-            <form className={styles.inpForm} onSubmit={formik.handleSubmit}>
+            <div className={styles.holder}>
+                <form className={styles.inpForm} onSubmit={formik.handleSubmit}>
 
-                <div>
-                    <input className={styles.field} type="text" name="username" placeholder="Username" value={formik.values.username} onChange={formik.handleChange} onBlur={formik.handleBlur}></input>
-                    {formik.touched.username && formik.errors.username ? <p className={styles.error}>{formik.errors.username}</p> : null}
-                </div>
+                        <input className={styles.username} type="text" name="username" placeholder="Username" value={formik.values.username} onChange={formik.handleChange} onBlur={formik.handleBlur}></input>
+                        {formik.touched.username && formik.errors.username ? <p className={styles.error1}>{formik.errors.username}</p> : null}
+                    
 
-                <div>
-                    <input className={styles.field} type="text" name="email" placeholder="Email" value={formik.values.email} onChange={formik.handleChange} onBlur={formik.handleBlur}></input>
-                    {formik.touched.email && formik.errors.email ? <p className={styles.error}>{formik.errors.email}</p> : null}
-                </div>
+                 
+                        <input className={styles.email} type="text" name="email" placeholder="Email" value={formik.values.email} onChange={formik.handleChange} onBlur={formik.handleBlur}></input>
+                        {formik.touched.email && formik.errors.email ? <p className={styles.error2}>{formik.errors.email}</p> : null}
+                    
 
-                <div>
-                    <input className={styles.field} type="password" name="password" placeholder="Password" value={formik.values.password} onChange={formik.handleChange} onBlur={formik.handleBlur}></input>
-                    {formik.touched.password && formik.errors.password ? <p className={styles.error}>{formik.errors.password}</p> : null}
-                </div>
+                    
+                        <input className={styles.field} type="password" name="password" placeholder="Password" value={formik.values.password} onChange={formik.handleChange} onBlur={formik.handleBlur}></input>
+                        {formik.touched.password && formik.errors.password ? <p className={styles.error3}>{formik.errors.password}</p> : null}
+                    
 
-                <div>
-                    <input className={styles.field} type="password" name="confirmPassword" placeholder="Confirm Password" value={formik.values.confirmPassword} onChange={formik.handleChange} onBlur={formik.handleBlur}></input>
-                    {formik.touched.confirmPassword && formik.errors.confirmPassword ? <p className={styles.error}>{formik.errors.confirmPassword}</p> : null}
-                </div>
+            
+                        <input className={styles.field_last} type="password" name="confirmPassword" placeholder="Confirm Password" value={formik.values.confirmPassword} onChange={formik.handleChange} onBlur={formik.handleBlur}></input>
+                        {formik.touched.confirmPassword && formik.errors.confirmPassword ? <p className={styles.error4}>{formik.errors.confirmPassword}</p> : null}
+                    
+                    <button className={styles.btn} type="submit"> <span className={styles.submit}>Submit</span> </button>
+                </form>
 
-                <button className={styles.field} type="submit">Submit</button>
-            </form>
+            </div>
+            <div style={{position:"relative"}}>
+            <img src="https://us.123rf.com/450wm/sarayutsy/sarayutsy1810/sarayutsy181000043/sarayutsy181000043.jpg?ver=6" alt="" className={styles.img}/>
+
+            </div>
+
+
         </>
     )
 }
