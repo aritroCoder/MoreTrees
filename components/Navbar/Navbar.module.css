@@ -8,6 +8,7 @@
     background: #90B77D;
     padding: 0px 12px;
     color: #483838;
+    z-index: 200;
     /* position: absolute; */
     
 }
@@ -79,3 +80,22 @@
   .menu{
     height: 2vw;
   }
+
+  @media only screen and  (max-width:3000px){
+     .main{
+      display: none;
+     }
+    
+    }
+
+   @media only screen and  (max-width:600px){
+        .main{
+           display: block;
+        }
+        .container{
+            display: none;
+        }
+       
+       }
+
+    
