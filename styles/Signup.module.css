@@ -143,29 +143,29 @@
 .field1{
     position: absolute;
     top: 25vw;
-    left:40vw;
-    font-size: 1vw;
-    height: 2.4vw;
-    width: 11vw;
+    left:30vw;
+    font-size: 1.5vw;
+    height: 4vw;
+    width: 35vw;
     border-radius: 0.4vw;
 }
 
 .field2{
     position: absolute;
-    top: 30vw;
-    left:40vw;
-    font-size: 1vw;
-    height: 2.4vw;
-    width: 11vw;
+    top: 34vw;
+    left:30vw;
+    font-size: 1.5vw;
+    height: 4vw;
+    width: 35vw;
     border-radius: 0.4vw;
 
 }
 
 .err1{
     position: absolute;
-    top: 28vw;
+    top: 30vw;
     left:40vw;
-    font-size: 1vw;
+    font-size: 2vw;
     color: red;
     margin-bottom: 2vw;
 
@@ -173,22 +173,22 @@
 
 .err2{
     position: absolute;
-    top: 33vw;
+    top: 39vw;
     left:40vw; 
-    font-size: 1vw;
+    font-size: 2vw;
     color: red;
     margin: 0;
 }
 
 .btn1{
     position: absolute;
-    height: 3vw;
-    width: 10vw;
+    height: 4vw;
+    width: 15vw;
     border-radius: 2vw;
     background-color: rgb(17, 84, 122);
     color: white;
-    top: 36vw;
-    left: 41vw;
+    top: 43vw;
+    left: 37vw;
 }
 
 .btn1:hover{
@@ -197,8 +197,8 @@
 }
 
 .text{
-    font-size: 1.2vw;
+    font-size: 1.7vw;
     position: absolute;
     top:0.6vw;
-    left:2.8vw
+    left:4.4vw
 }
