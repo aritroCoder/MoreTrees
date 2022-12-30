@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .field{
     
     border-radius: 0.4vw;
@@ -133,6 +134,69 @@
 
 
 .submit{
+    font-size: 1.2vw;
+    position: absolute;
+    top:0.6vw;
+    left:2.8vw
+}
+
+.field1{
+    position: absolute;
+    top: 25vw;
+    left:40vw;
+    font-size: 1vw;
+    height: 2.4vw;
+    width: 11vw;
+    border-radius: 0.4vw;
+}
+
+.field2{
+    position: absolute;
+    top: 30vw;
+    left:40vw;
+    font-size: 1vw;
+    height: 2.4vw;
+    width: 11vw;
+    border-radius: 0.4vw;
+
+}
+
+.err1{
+    position: absolute;
+    top: 28vw;
+    left:40vw;
+    font-size: 1vw;
+    color: red;
+    margin-bottom: 2vw;
+
+}
+
+.err2{
+    position: absolute;
+    top: 33vw;
+    left:40vw; 
+    font-size: 1vw;
+    color: red;
+    margin: 0;
+}
+
+.btn1{
+    position: absolute;
+    height: 3vw;
+    width: 10vw;
+    border-radius: 2vw;
+    background-color: rgb(17, 84, 122);
+    color: white;
+    top: 36vw;
+    left: 41vw;
+}
+
+.btn1:hover{
+    background-color: aqua;
+    color: black;
+}
+
+.text{
     font-size: 1.2vw;
     position: absolute;
     top:0.6vw;

@@ -41,19 +41,19 @@ const login = () => {
     return (
         <>
             <Navbar />
-            <form className={styles.inpForm} onSubmit={formik.handleSubmit}>
+            <form className={styles.inputForm} onSubmit={formik.handleSubmit}>
 
                 <div>
-                    <input className={styles.field} type="text" name="username" placeholder="Username" value={formik.values.username} onChange={formik.handleChange} onBlur={formik.handleBlur}></input>
-                    {formik.touched.username && formik.errors.username ? <p className={styles.error}>{formik.errors.username}</p> : null}
+                    <input className={styles.field1} type="text" name="username" placeholder="Username" value={formik.values.username} onChange={formik.handleChange} onBlur={formik.handleBlur}></input>
+                    {formik.touched.username && formik.errors.username ? <p className={styles.err1}>{formik.errors.username}</p> : null}
                 </div>
 
                 <div>
-                    <input className={styles.field} type="password" name="password" placeholder="Password" value={formik.values.password} onChange={formik.handleChange} onBlur={formik.handleBlur}></input>
-                    {formik.touched.password && formik.errors.password ? <p className={styles.error}>{formik.errors.password}</p> : null}
+                    <input className={styles.field2} type="password" name="password" placeholder="Password" value={formik.values.password} onChange={formik.handleChange} onBlur={formik.handleBlur}></input>
+                    {formik.touched.password && formik.errors.password ? <p className={styles.err2}>{formik.errors.password}</p> : null}
                 </div>
 
-                <button className={styles.field} type="submit">Submit</button>
+                <button className={styles.btn1} type="submit"><span className={styles.text}>Submit</span></button>
             </form>
         </>
     )
