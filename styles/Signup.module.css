@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .field{
     
     border-radius: 0.4vw;
@@ -137,4 +138,67 @@
     position: absolute;
     top:0.6vw;
     left:2.8vw
+}
+
+.field1{
+    position: absolute;
+    top: 25vw;
+    left:30vw;
+    font-size: 1.5vw;
+    height: 4vw;
+    width: 35vw;
+    border-radius: 0.4vw;
+}
+
+.field2{
+    position: absolute;
+    top: 34vw;
+    left:30vw;
+    font-size: 1.5vw;
+    height: 4vw;
+    width: 35vw;
+    border-radius: 0.4vw;
+
+}
+
+.err1{
+    position: absolute;
+    top: 30vw;
+    left:40vw;
+    font-size: 2vw;
+    color: red;
+    margin-bottom: 2vw;
+
+}
+
+.err2{
+    position: absolute;
+    top: 39vw;
+    left:40vw; 
+    font-size: 2vw;
+    color: red;
+    margin: 0;
+}
+
+.btn1{
+    position: absolute;
+    height: 4vw;
+    width: 15vw;
+    border-radius: 2vw;
+    background-color: rgb(17, 84, 122);
+    color: white;
+    top: 43vw;
+    left: 37vw;
+}
+
+.btn1:hover{
+    background-color: aqua;
+    color: black;
+}
+
+.text{
+    font-size: 1.7vw;
+    position: absolute;
+    top:0.6vw;
+    left:4.4vw
 }
